@@ -1,0 +1,14 @@
+# http://editorconfig.org
+root = true
+
+[*]
+charset = utf-8 #指定文件字符集为UTF-8。
+indent_style = space #指定空格为缩进方式。
+indent_size = 2 #指定缩进大小为2个空格。
+end_of_line = lf #指定行尾使用LF（Unix/Linux风格）。
+insert_final_newline = true #指定文件末尾必须有一行空行。
+trim_trailing_whitespace = true #指定删除每行末尾的空格。
+
+[*.md] #指定Markdown文件使用不同的规则。
+insert_final_newline = false #指定Markdown文件末尾不需要空行。
+trim_trailing_whitespace = false #指定Markdown文件不需要删除每行末尾的空格

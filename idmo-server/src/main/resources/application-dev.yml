@@ -1,0 +1,45 @@
+# 开发环境配置
+server:
+  port: 8080
+springdoc:
+  paths-to-match: /api/**
+  swagger-ui:
+    operations-sorter: alpha
+spring:
+  mail:
+    host: smtp.qq.com
+    username: 2427324653@qq.com
+    password: hyibyqoxaqezeadj
+  rabbitmq:
+    addresses: localhost
+    username: guest
+    password: guest
+    virtual-host: /
+  datasource:
+    url: jdbc:postgresql://175.178.49.159:5432/webgis-demo
+    username: shu
+    password: 123456
+    driverClassName: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+  security:
+    jwt:
+      key: 'abcdefghijklmn'
+      expire: 72
+      limit:
+        base: 10
+        upgrade: 300
+        frequency: 30
+    filter:
+      order: -100
+  web:
+    verify:
+      mail-limit: 60
+    flow:
+      period: 3
+      limit: 50
+      block: 30
+    cors:
+      origin: '*'
+      credentials: false
+      methods: '*'

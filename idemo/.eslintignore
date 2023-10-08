@@ -1,0 +1,15 @@
+public
+.vscode
+node_modules
+dist
+*.d.ts
+/src/assets
+/src/libs
+/src/shader
+package.json
+.eslintrc.js
+.prettierrc.js
+commitlint.config.js
+postcss.config.js
+stylelint.config.js
+vite.config.ts
